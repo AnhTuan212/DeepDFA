@@ -46,3 +46,13 @@ optimizer:
     lr: 1e-3
     weight_decay: 1e-2
 ckpt_path: null
+model:
+  class_path: code_gnn.models.FlowGNNGGNNModule  # Đường dẫn đến FlowGNNGGNNModule
+  init_args:
+    feat: "_ABS_DATAFLOW_datatype_all"  # Thay bằng giá trị phù hợp
+    input_dim: 1002         # Kích thước đầu vào
+    hidden_dim: 32       # Kích thước ẩn
+    n_steps: 5            # Số bước (steps)
+    num_output_layers: 1  # Số lớp đầu ra
+    label_style: "graph"
+    use_codebert: True
