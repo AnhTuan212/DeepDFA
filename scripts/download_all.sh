@@ -17,7 +17,7 @@ unzip -o preprocessed_data.zip
 rm preprocessed_data.zip
 
 echo "🔽 Tải DeepDFA CFGs..."
-gdown --id 1KK2b_AxwOxhIEFVO89gp5CLbxiicXKXu --quiet -O before.zip
+gdown --id 1l1EkBwn11kEAiygpHT0GPWFRFBXTH0pm --quiet -O before.zip
 unzip -o before.zip -d DDFA/storage/processed/bigvul/
 rm before.zip 
 
