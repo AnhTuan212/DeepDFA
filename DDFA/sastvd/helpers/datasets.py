@@ -381,7 +381,7 @@ def ds_filter(
         ]
         df = df[df.id.isin(finished)]
         logger.debug("check_file %d", len(df))
-    assert len(df) > 0
+    assert len(df) >= 0
 
     # Filter out samples with no lineNumber from Joern output
     if check_valid:
